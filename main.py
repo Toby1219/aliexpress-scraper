@@ -33,8 +33,7 @@ async def get_browser(*link, p):
     header = user_agents.random
     browser = await p.chromium.launch()
     context = await browser.new_context(
-        user_agent=header,
-        viewport={'width': 960, 'height': 600}
+        user_agent=header
     )
     page = await context.new_page()
     await page.goto(urls)
