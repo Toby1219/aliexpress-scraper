@@ -8,7 +8,7 @@ import asyncio
 from dataclasses import dataclass, asdict, astuple
 from fake_useragent import UserAgent
 from playwright.async_api import async_playwright
-from functools import lru_cache, cache
+from functools import lru_cache
 from bs4 import BeautifulSoup
 
 main_path = 'data'
